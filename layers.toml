@@ -1,0 +1,132 @@
+[layers]
+
+# Base map layer configuration; allows to filter map based on tags.
+#
+# Use
+# - The OpenStreetMap wiki [1] to check out features and how they are mapped
+# - TagInfo [2] to see tag distributions in the OpenStreetMap database
+# - Overpass Turbo [3] to make queries against the OpenStreetMap database
+#
+# 1 https://wiki.openstreetmap.org/wiki/Map_Features
+# 2 https://taginfo.openstreetmap.org/
+# 3 https://overpass-turbo.eu/
+#
+# Note: we only support segments and therefore way tags for now
+
+
+# https://wiki.openstreetmap.org/wiki/Key:highway
+# https://taginfo.openstreetmap.org/keys/?key=highway#values
+highway = [
+  "residential",
+  "service",
+  "track",
+  "unclassified",
+  "footway",
+  "path",
+  "tertiary",
+  "secondary",
+  "primary",
+  "trunk",
+  "living_street",
+  "cycleway",
+  "steps",
+  "motorway",
+  "motorway_link",
+  "pedestrian",
+  "trunk_link",
+  "primary_link",
+  "secondary_link",
+  "road",
+  "construction",
+  "tertiary_link",
+  "proposed",
+]
+
+# https://wiki.openstreetmap.org/wiki/Key:junction
+# https://taginfo.openstreetmap.org/keys/?key=junction#values
+junction = [
+  "roundabout",
+  "circular",
+]
+
+# https://wiki.openstreetmap.org/wiki/Key:surface
+# https://taginfo.openstreetmap.org/keys/?key=surface#values
+surface = [
+  "asphalt",
+  "unpaved",
+  "paved",
+  "ground",
+  "gravel",
+  "concrete",
+  "paving_stones",
+  "dirt",
+  "grass",
+  "compacted",
+  "sand",
+  "cobblestone",
+  "fine_gravel",
+  "sett",
+]
+
+# https://wiki.openstreetmap.org/wiki/Key:smoothness
+# https://taginfo.openstreetmap.org/keys/?key=smoothness#values
+smoothness = [
+  "good",
+  "excellent",
+  "intermediate",
+  "bad",
+  "very_bad",
+  "horrible",
+  "very_horrible",
+  "impassable",
+  "very_good",
+]
+
+# https://wiki.openstreetmap.org/wiki/Key:width
+# https://taginfo.openstreetmap.org/keys/width#values
+width = ["*"]
+
+# https://wiki.openstreetmap.org/wiki/Key:maxwidth
+# https://taginfo.openstreetmap.org/keys/maxwidth#values
+maxwidth = ["*"]
+
+# https://wiki.openstreetmap.org/wiki/Key:lanes
+# https://taginfo.openstreetmap.org/keys/lanes#values
+lanes = ["*"]
+
+# https://wiki.openstreetmap.org/wiki/Key:lane_markings
+# https://taginfo.openstreetmap.org/keys/?key=lane_markings#values
+lane_markings = [
+  "yes",
+  "no"
+]
+
+# https://wiki.openstreetmap.org/wiki/Key:maxspeed
+# https://taginfo.openstreetmap.org/keys/maxspeed#values
+maxspeed = ["*"]
+
+# https://wiki.openstreetmap.org/wiki/Key:minspeed
+# https://taginfo.openstreetmap.org/keys/?key=minspeed#values
+minspeed = ["*"]
+
+# https://wiki.openstreetmap.org/wiki/Key:oneway
+# https://taginfo.openstreetmap.org/keys/?key=oneway#values
+oneway = [
+  "yes",
+  "no",
+  "-1",
+  "1",
+  "reversible",
+  "alternating"
+]
+
+# https://wiki.openstreetmap.org/wiki/Key:overtaking
+# https://taginfo.openstreetmap.org/keys/?key=overtaking#values
+overtaking = [
+  "yes",
+  "no",
+  "forward",
+  "backward",
+  "both",
+  "caution"
+]
